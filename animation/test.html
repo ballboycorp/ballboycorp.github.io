@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple CSS Animation - Football</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href='http://fonts.googleapis.com/css?family=Unkempt:700' rel='stylesheet' type='text/css'>
+        <style>
+            #square {
+                height: 150px;
+                width: 150px;
+                background-color: #ccc;
+                animation: moveSquare 2s infinite;
+                -webkit-animation: moveSquare 2s infinite; /* Safari and Chrome */
+                position: absolute;
+                top: 90px;
+                left: 0px;
+                background-image: url('football.jpg');
+            }
+ 
+            @keyframes moveSquare {
+                0% { top: 100px; }
+                100% { top: 0px; }
+            }
+ 
+            @-webkit-keyframes moveSquare {
+                0% { top: 100px; }
+                100% { top: 0px; }
+            }
+             
+            p {
+                font-family: 'Unkempt', cursive;
+            }
+             
+        </style>
+    </head>
+    <body>  
+        <div id="square"></div>
+    </body>
+</html>
